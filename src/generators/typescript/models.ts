@@ -184,7 +184,7 @@ function generateInterface(name: string, definition: any): string {
   if (definition.properties) {
     for (const [propName, propDef] of Object.entries(definition.properties) as Array<[string, { description?: string, [x: string]: any }]>) {
       const isRequired = definition.required?.includes(propName);
-      const propDocs = propDef.description ? `  /**\n   * ${propDef.description}\n   */\n` : `// Data Type - ${propName}`;
+      const propDocs = propDef.description ? `  /**\n   * ${propDef.description}\n   */\n` : `// Data Type - ${propName} \n`;
       const propType = getTypeFromDefinition(propDef);
       
       properties.push(`${propDocs}  ${/^\d/.test(propName) ? `"${propName}"`: propName}${isRequired ? '' : '?'}: ${propType};`);

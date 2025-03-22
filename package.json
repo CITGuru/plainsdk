@@ -28,6 +28,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.1",
     "@typescript-eslint/typescript-estree": "^5.57.0",
     "acorn": "^8.8.2",
     "ast-types": "^0.14.2",
@@ -35,6 +36,7 @@
     "chalk": "^4.1.2",
     "commander": "^9.5.0",
     "diff": "^5.1.0",
+    "dotenv": "^16.4.7",
     "inquirer": "^8.2.5",
     "js-yaml": "^4.1.0",
     "node-fetch": "^2.6.9",

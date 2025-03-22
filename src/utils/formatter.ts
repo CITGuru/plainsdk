@@ -382,7 +382,10 @@ export function formatModelName(name: string, style: string): string {
   export function formatResourceName(name: string, style: string): string {
     // Handle plural forms and transform to singular
     // This is a simplistic implementation; a real one would use a proper singularization library
-    const singular = name.endsWith('s') ? name.slice(0, -1) : name;
+    // const singular = name.endsWith('s') ? name.slice(0, -1) : name;
+    const singular = name
+
+    console.log(singular, name)
     
     switch (style) {
       case 'camelCase':

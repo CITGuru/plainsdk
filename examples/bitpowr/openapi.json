@@ -26719,16 +26719,16 @@
             "Getmarketticker": {
                 "title": "Getmarketticker",
                 "required": [
-                    "coin_paira"
+                    "coin_pair"
                 ],
                 "type": "object",
                 "properties": {
-                    "coin_paira": {
+                    "coin_pair": {
                         "type": "string"
                     }
                 },
                 "example": {
-                    "coin_paira": "0.012"
+                    "coin_pair": "0.012"
                 }
             },
             "CreateaccountsassetsbyidRequest": {

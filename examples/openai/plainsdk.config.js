@@ -1,10 +1,10 @@
 // PlainSDK configuration for the Pet Store API
 module.exports = {
     // Base configuration
-    name: "@bitpowr/api-sdk",
+    name: "@openai/api",
     version: "1.0.0",
-    description: "SDK for Bitpowr API",
-    sourceOpenAPI: "./openapi.json",
+    description: "OpenAI SDK",
+    sourceOpenAPI: "./openapi.yaml",
     
     // Output configuration
     outputDir: "./generated",

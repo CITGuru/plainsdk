@@ -32,7 +32,8 @@ export async function generateErrorHandling(
  * @returns Default error handling content
  */
 function generateDefaultErrors(): string {
-  return `/**
+  return `
+  /**
  * API Error class for handling errors from the API
  */
 export class ApiError extends Error {
@@ -95,9 +96,7 @@ export class ApiError extends Error {
       error.status || 0
     );
   }
-}
-
-**/`
+}`
 }
 
 
